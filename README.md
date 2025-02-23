@@ -104,4 +104,3 @@ Have questions or feedback? Reach out via our contact form on the website.
 
 Thank you for checking out **Native 254**! Enjoy exploring the site and have a fantastic day! 😎🎉
 ```
-
