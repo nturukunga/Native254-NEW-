@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Native 254</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">Native 254</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#who-we-are">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="hero">
+    <div class="hero-content fade-up">
+      <br>
+      <div class="paragraph">
+        <p>
+            <h1>Welcome to  the NAtIVE 254 website!.</h1>
+        </p>
+        </div>
+      <button onclick="navigateTo ('services')">View services</button>
+    </div>
+    <!-- Hero Image -->
+    <div class="hero-image fade-up">
+      <img src="img/wide logo.png" alt="Hero image" />
+    </div>
+  </section>
+
+  <!-- WHO WE ARE SECTION -->
+  <section id="who-we-are" class="who-we-are">
+    <div class="section-content fade-up">
+      <h2>Who we are</h2>
+      <p>
+        Native 254 is a forward-thinking creative web development solution 
+        transforming your digital vision into reality. Backed by an experienced 
+        team of experts, we create robust and user-centric solutions.
+        <br>
+                At NAtIVe25FOuR, we believe in fostering long-term partnerships built on trust, integrity, and mutual success. 
+                We strive to be more than just a service provider; we aim to be a strategic partner in our clients' journey towards digital transformation. 
+                By leveraging the latest technologies and innovative strategies, we empower businesses to thrive in an increasingly competitive marketplace.
+                <br>
+      </p>
+      <p>
+        Our focus is on innovative and versatile web applications that bring 
+        your business’ ideas to life. Join our journey of innovation and 
+        creativity, and let’s build something amazing together!
+      </p>
+      <button>Get in touch</button>
+    </div>
+  </section>
+
+  <!-- INNOVATIVE SOLUTIONS SECTION -->
+  <section id="services" class="innovative-solutions">
+    <h2 class="fade-up">Innovative solutions</h2>
+    <p class="fade-up">Empowering your digital journey</p>
+    <div class="cards">
+      <!-- Card 1 -->
+      <div class="card fade-up">
+        <img src="img/web development.png" alt="Web Development" />
+        <h3>Web development</h3>
+        <p>Crafting responsive and user-friendly websites.</p>
+      </div>
+      <!-- Card 2 -->
+      <div class="card fade-up">
+        <img src="img/mobile app dev.png" alt="Mobile App Development" />
+        <h3>Mobile app development</h3>
+        <p>Building innovative apps for Android and iOS.</p>
+      </div>
+      <!-- Card 3 -->
+      <div class="card fade-up">
+        <img src="img/it consult.png" alt="E-commerce Solutions" />
+        <h3>IT Consulting</h3>
+        <p>Our IT consulting services are designed to help you make informed decisions and implement solutions that align with your business goals.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+<section id="contact" class="contact-section fade-up">
+    <h2>Get in touch</h2>
+    <p>We’re here to help you thrive!</p>
+    <form id="contactForm" class="contact-form">
+      <label for="name">Name*</label>
+      <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+  
+      <label for="email">Email address*</label>
+      <input type="email" id="email" name="email" placeholder="email@domain.com" required />
+  
+      <label for="phone">Phone number</label>
+      <input type="text" id="phone" name="phone" placeholder="(555) 123-4567" />
+  
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+  
+      <div class="consent">
+        <input type="checkbox" id="consent" name="consent" />
+        <label for="consent">
+          I allow you to store my details so you can process my inquiry.
+        </label>
+      </div>
+  
+      <button type="submit">Submit</button>
+    </form>
+  
+    <!-- prompt after submission -->
+    <div id="submitPrompt" class="submit-prompt" style="display: none;">
+      Your message has been submitted!
+    </div>
+  
+
+    <!-- HOURS / FOOTER INFO -->
+    <div class="footer-info">
+      <h3>Knowledge/Help center</h3>
+      <ul>
+        <li>Monday &mdash; 9:00am &ndash; 5:00pm</li>
+        <li>Tuesday &mdash; 9:00am &ndash; 5:00pm</li>
+        <li>Wednesday &mdash; 9:00am &ndash; 5:00pm</li>
+        <li>Thursday &mdash; 9:00am &ndash; 5:00pm</li>
+        <li>Friday &mdash; 9:00am &ndash; 5:00pm</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="quick-links">
+      <h4>Quick links</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#who-we-are">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="contact-us">
+      <h4>Contact us</h4>
+      <p>Schedule an appointment</p>
+      <p>Contact by email</p>
+    </div>
+    <p class="copyright">
+      &copy; 2024 Native 254. All rights reserved.
+    </p>
+  </footer>
+
+  <!-- Link to external JS -->
+  <script src="script.js"></script>
+  <script src="server.js"></script>
+  <script src="sendEmail.js"></script>
+</body>
+</html>

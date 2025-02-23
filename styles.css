@@ -1,0 +1,332 @@
+/* RESET / BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    overflow-x: hidden;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  
+  /* NAVBAR */
+  .navbar {
+    color: white; 
+    padding: 10px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem;
+    background-color: #000000;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  .navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .navbar .nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .navbar .nav-links a:hover {
+    color: #28722dfd; 
+  }
+  
+  /* HERO SECTION */
+  .hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 3rem 2rem;
+    background-color: #262A2B;
+    font-family: Arial, sans-serif;
+
+  }
+  
+  .hero-content {
+    flex: 1;
+    padding: 1rem;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+  }
+  
+  .hero-content button {
+    padding: 0.75rem 1.5rem;
+    background-color: #a4ff07;
+    border: none;
+    color: #000;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .hero-content button:hover {
+    background-color: #393d3d;
+  }
+  
+  .hero-image {
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+    width: 700px;
+    height: 400px;
+    display: flex;
+  }
+  
+  .hero-image img {
+    max-width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+
+  }
+  
+  /* WHO WE ARE SECTION */
+  .who-we-are {
+    background-color: #171a1e;
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+  
+  .who-we-are .section-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .who-we-are h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .who-we-are p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+  
+  .who-we-are button {
+    padding: 0.75rem 1.5rem;
+    background-color: #a4ff07;
+    border: none;
+    color: #000;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .who-we-are button:hover {
+    background-color: #393d3d;
+  }
+  
+  /* INNOVATIVE SOLUTIONS */
+  .innovative-solutions {
+    background-color: #1e242b;
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+  
+  .innovative-solutions h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .innovative-solutions p {
+    margin-bottom: 2rem;
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  .card {
+    color: #D8D4EF;
+    background-color: #3f5855;
+    border-radius: 8px;
+    padding: 1.5rem;
+    width: 280px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+  }
+  
+  .card h3 {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* CONTACT SECTION */
+  .contact-section {
+    background-color: #212830;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+  }
+  
+  .contact-section h2 {
+    text-align: center;
+  }
+  
+  .contact-form {
+    flex: 1 1 300px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    background-color: #051727;
+    padding: 2rem;
+    border-radius: 8px;
+  }
+  
+  .contact-form label {
+    font-weight: bold;
+  }
+  
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .contact-form button {
+    padding: 0.75rem;
+    background-color: #a4ff07;
+    border: none;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-form button:hover {
+    background-color: #393d3d;
+  }
+  
+  .consent {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .footer-info {
+    flex: 1 1 200px;
+    max-width: 300px;
+  }
+  
+  .footer-info h3 {
+    margin-bottom: 1rem;
+  }
+  
+  .footer-info ul {
+    list-style: none;
+    line-height: 1.8;
+  }
+  
+  /* FOOTER */
+  .site-footer {
+    background-color: #000000;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  
+  .site-footer .quick-links,
+  .site-footer .contact-us {
+    flex: 1 1 150px;
+  }
+  
+  .site-footer h4 {
+    margin-bottom: 1rem;
+  }
+  
+  .site-footer ul {
+    list-style: none;
+    line-height: 1.8;
+  }
+  
+  .site-footer ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .site-footer ul li a:hover {
+    color: #ffc107;
+  }
+  
+  .site-footer .contact-us p {
+    margin-bottom: 0.5rem;
+  }
+  
+  .site-footer .contact-us p:hover {
+    color: #ffc107;
+    cursor: pointer;
+  }
+  
+  .site-footer .copyright {
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #aaa;
+  }
+  
+  /* FADE-UP ANIMATION */
+  .fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  .fade-up.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
